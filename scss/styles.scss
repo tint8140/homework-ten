@@ -1,0 +1,41 @@
+@import "variables.scss";
+@import "structure.scss";
+@import "mixins.scss";
+
+//nav
+@import "nav/nav-white.scss";
+@import "nav/nav-black.scss";
+
+//home page
+@import "home/hero.scss";
+@import "home/promo-tours.scss";
+@import "home/booking-form.scss";
+
+//about page
+@import "about/about.scss";
+
+//tours page
+@import "tour/tour.scss";
+
+//tour pages
+@import "tours/tour1.scss";
+@import "tours/tour2.scss";
+@import "tours/tour3.scss";
+@import "tours/tour4.scss";
+@import "tours/tour5.scss";
+@import "tours/tour6.scss";
+@import "tours/tour7.scss";
+@import "tours/tour8.scss";
+@import "tours/tour9.scss";
+
+//special offers
+@import "special/specialoffers.scss";
+
+//blog
+@import "blog/blog.scss";
+
+//contact
+@import "contact.scss";
+
+//footer
+@import "footer/footer.scss";

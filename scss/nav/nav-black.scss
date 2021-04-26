@@ -1,0 +1,42 @@
+nav {
+    width: 980px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+    justify-content: space-around;
+    border-bottom: solid;
+    border-color: black;
+    border-width: 2px;
+    font-family: Gill;
+    display: flex;
+  
+    .logo {
+      width: 92px;
+      height: 42px;
+      margin-right: auto;
+      text-align: center;
+      background-image: url("/images/logo/logo-black.png");
+    }
+  
+    .links {
+      width: 480px;
+      height: 42px;
+      align-self: center;
+      display: flex;
+      font-size: 15px;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        // font-weight: bold;
+        margin: auto;
+        border-right: solid;
+        border-width: 2px;
+        padding-right: 20px;
+        border-color:  #79addc;
+      }
+      #endBorder {
+        border: none;
+      }
+    }
+  }
+  

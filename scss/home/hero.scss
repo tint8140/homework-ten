@@ -1,0 +1,64 @@
+.hero {
+  width: 1280px;
+  height: 500px;
+  //margin 0 auto only works if a width is set
+  margin: 0 auto;
+  background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  text-align: center;
+  font-family: Gill;
+  color: $white;
+  header {
+    // text-transform: lowercase;
+    font-size: 60px;
+    margin: 69px auto 30px auto;
+    font-family: Proxima;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    color: $white;
+    height: 40px;
+    width: 121px;
+    font-size: 15px;
+    background-color: $site-blue;
+    border: none;
+    margin-top: 46px;
+  }
+}
+//
+// .hero-content {
+//   height: 350px;
+//   /* background-color: rgba(100, 100, 100, 0.5); */
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .hero-content h1 {
+//   color: white;
+// }
+// .hero-content .page-name {
+//   text-transform: capitalize;
+// }
+// .home-hero-image {
+//   background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+//     url(../images/hero.jpg);
+// }
+//
+@media only screen and (max-width: 1060px) {
+  .hero {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    align-items: center;
+    min-width: 80%;
+  }
+}

@@ -1,0 +1,183 @@
+.tour {
+  header {
+    @include center(981px, 20px auto 0 auto);
+    // max-width: 981px;
+    height: 200px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../images/tours-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: brown;
+    span {
+      text-transform: uppercase;
+      color: white;
+      font-family: Proxima;
+      font-size: 60px;
+    }
+  }
+
+  .tours {
+    @include center(818px, 48px auto 0 auto);
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 105px;
+    color: white;
+    .promo {
+      width: 236px;
+      height: 304px;
+      background-color: beige;
+      margin-top: 55px;
+      font-family: Proxima;
+      // font-weight: normal;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      align-items: center;
+      position: relative;
+    }
+    text {
+      width: 100%;
+      margin-bottom: 70px;
+      font-size: 60px;
+      position: absolute;
+      top: 60px;
+      text-align: center;
+
+      // align-items: center;
+      span {
+        position: absolute;
+        font-size: 50px;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+      }
+    }
+
+    p {
+      width: 100%;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      position: absolute;
+      top: 100px;
+      // left: 60px;
+      text-align: center;
+    }
+
+    .promoBtn {
+      @include siteButton(10px 30px, 25px);
+      height: 40px;
+      width: 133px;
+      position: absolute;
+      bottom: 40px;
+      left: 55px;
+      p {
+        // max-width: 135px;
+        // width: 100%;
+        // height: 100%;
+        font-size: 15px;
+        font-family: Gill;
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        right: 0px;
+        bottom: 10px;
+        text-align: center;
+      }
+    }
+
+    .promo.Israel {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-01.jpg);
+    }
+    .promo.USA {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-02.jpg);
+    }
+    .promo.AUS {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-03.jpg);
+    }
+
+    .promo.NewZealand {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-04.jpg);
+    }
+    .promo.France {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-05.jpg);
+    }
+    .promo.Egypt {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-06.jpg);
+    }
+    .promo.Japan {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-07.jpg);
+    }
+    .promo.Canada {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-08.jpg);
+    }
+    .promo.UAE {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-09.jpg);
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  .tour {
+    .tours {
+      flex-direction: column;
+      align-items: center;
+      // background-color: blue;
+    }
+  }
+}

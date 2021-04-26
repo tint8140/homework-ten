@@ -1,0 +1,120 @@
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  // background-color: gray;
+  .top-section {
+    margin-top: 100px;
+    width: 980px;
+    min-height: 215px;
+    div {
+      font-size: 60px;
+      font-family: Proxima;
+      font-weight: lighter;
+      letter-spacing: 8px;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline;
+      .aboutborder {
+        border-bottom: 2px solid black;
+        width: 70%;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+      }
+    }
+
+    p {
+      margin-top: 40px;
+      font-family: Gill;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    margin-bottom: 30px;
+  }
+
+  .bottom-section {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    max-width: 676px;
+
+    div {
+      font-size: 40px;
+      font-family: Proxima;
+      font-weight: lighter;
+      letter-spacing: 6px;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline;
+      .aboutborder {
+        border-bottom: 2px solid black;
+        width: 70%;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+      }
+    }
+
+    .client {
+      margin-top: 40px;
+      min-width: 676px;
+      min-height: 150px;
+      display: flex;
+      margin-bottom: 38px;
+
+      .client1,
+      .client2 {
+        width: 260px;
+        height: 150px;
+        //   background-color: mediumspringgreen;
+      }
+
+      .client1 {
+        background-image: url(../images/about-client-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client2 {
+        background-image: url(../images/about-client-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .qoute {
+        position: relative;
+        min-height: 50px;
+        width: 100%;
+        padding-left: 25px;
+        font-family: Gill;
+        font-size: 16px;
+        p:last-of-type {
+          margin-bottom: 55px;
+          letter-spacing: 1px;
+          font-style: italic;
+        }
+
+        .name {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-family: Gill;
+          font-size: 16px;
+          letter-spacing: 1px;
+          color: $site-blue;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 980px) {
+  .about {
+    min-width: 80%;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+}

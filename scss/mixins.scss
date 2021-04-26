@@ -1,0 +1,22 @@
+@mixin center ($elementWidth, $elementMargin:0 auto) {
+    max-width: $elementWidth;
+    margin: $elementMargin;
+}
+@mixin heading ($headingsize, $headingspace){
+font-size: $headingsize;
+letter-spacing: $headingspace;
+
+}
+@mixin siteButton ($btnPadding: 10px, $btnRadius: 20px, $btnBG: #79addc, $white:white) {
+padding: $btnPadding;
+border-radius: $btnRadius;
+background-color: $btnBG;
+color:$white;
+}
+
+@mixin border ($borderLine:2px solid black, $borderWidth: 100%, $borderbottom: 0px, $borderleft:0px){
+   border-bottom:$borderLine;
+   width:$borderWidth;
+   bottom: $borderbottom;
+   left: $borderleft;
+}
