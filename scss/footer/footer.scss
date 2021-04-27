@@ -27,12 +27,17 @@ footer {
 }
 
 //media queries
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 1060px) {
   footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 90%;
     .footer-note {
-      width: 80%;
-      justify-content: center;
-      padding: auto 20px;
+      position: absolute;
+      // align-items: center;
+      justify-content: space-around;
+      padding: auto 50px;
     }
   }
 }
