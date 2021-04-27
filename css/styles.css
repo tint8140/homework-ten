@@ -37,6 +37,9 @@ p {
   border-width: 2px;
   font-family: Gill;
   display: flex;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
 }
 .white .logo {
   width: 92px;
@@ -500,6 +503,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   height: 40px;
   width: 133px;
   position: absolute;
@@ -626,6 +631,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -713,6 +720,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -800,6 +809,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -887,6 +898,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -974,6 +987,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -1053,6 +1068,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -1132,6 +1149,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -1211,6 +1230,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -1290,6 +1311,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   max-width: 135px;
   margin: 100px 400px;
 }
@@ -1363,6 +1386,8 @@ nav .links #endBorder {
   border-radius: 25px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   height: 40px;
   position: absolute;
   max-width: 140px;
@@ -1418,21 +1443,15 @@ nav .links #endBorder {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 @media only screen and (max-width: 1080px) {
-  .specialOffers .specialOffers {
-    min-width: 80%;
-  }
-  .specialOffers .specialOffers .partOne {
-    display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin: 0 auto;
-    padding-left: 40px;
+  .specialOffers {
+    min-width: 0%;
+    justify-content: center;
+    padding: auto 20px;
     align-items: center;
-    margin: 0 100px;
   }
 }
-
 .blog {
   max-width: 980px;
   margin: 100px auto;
@@ -1570,6 +1589,8 @@ nav .links #endBorder {
   border-radius: 0px;
   background-color: #79addc;
   color: white;
+  border-color: #79addc;
+  border-radius: #79addc;
   width: 167px;
   height: 60px;
   margin-bottom: 300px;
@@ -1614,9 +1635,9 @@ footer .footer-note .logo {
 }
 
 @media only screen and (max-width: 845px) {
-  footer {
-    margin-top: 500px;
-    padding-left: 50px;
-    padding-right: 50px;
+  footer .footer-note {
+    width: 80%;
+    justify-content: center;
+    padding: auto 20px;
   }
 }

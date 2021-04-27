@@ -8,6 +8,9 @@
   border-width: 2px;
   font-family: Gill;
   display: flex;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
 
   .logo {
     width: 92px;

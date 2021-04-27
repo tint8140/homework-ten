@@ -8,17 +8,16 @@ function init() {
         let contentID = btnID + "Content";
 
         if (btnID != "home") {
-            $(".white-nav")
-              .removeClass(`white-nav`)
-              .addClass(`black-nav`);
+            // console.log("Button other than home clicked");
 
+            $("nav").removeClass("nav").addClass(".white")
               MODEL.getPageContent(contentID, addHomeListeners);
         }
         else if (btnID == "home") {
-            $(".black-nav")
-            .removeClass(`black-nav`)
-            .addClass(`white-nav`);
-            MODEL.getPageContent(contentID);
+            console.log("Home clicked");
+
+            $(".white").removeClass("nav").addClass(".white")
+            MODEL.getPageContent(contentID, addToursListeners);
         } });
 }
 
@@ -26,9 +25,8 @@ function addHomeListeners() {
     $("#app .promoBtn ").click(function (e) {
         let btnID = this.id;
         let contentID = btnID + "Content";
-        $(".white-nav")
-        .removeClass(`white-nav`)
-        .addClass(`black-nav`);
+        $(".white-nav").removeClass(`white-nav`).addClass(`black-nav`);
+        
         MODEL.getPageContent(contentID, addHomeListeners);
     });
 }
@@ -45,6 +43,6 @@ function addToursListeners() {
 }
 
 $(document).ready(function(){
-    init();
+    init();    
     MODEL.getPageContent("homeContent", addHomeListeners);
 });

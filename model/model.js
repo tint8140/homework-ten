@@ -1,6 +1,5 @@
-
 var homeContent= ` <div class="hero">
-<nav class="white"></nav>
+
     <header>
             travel-fly
     </header>
@@ -15,17 +14,17 @@ var homeContent= ` <div class="hero">
 <div class="promo Israel">
     <text>ISRAEL</text>
     <p>from $1500</p>
-    <button>LEARN MORE</button>
+    <button class="promoBtn" id="israel">LEARN MORE</button>
 </div>
 <div class="promo USA">
     <text>U.S.A</text>
     <p>from $1500</p>
-    <button>LEARN MORE</button>
+    <button class="promoBtn" id="usa">LEARN MORE</button>
 </div>
 <div class="promo AUS">
     <text>AUSTRAILIA</text>
     <p>from $1800</p>
-    <button>LEARN MORE</button>
+    <button class="promoBtn" id="aus">LEARN MORE</button>
 </div>
 </section>
 <section class="booking-form">
@@ -131,28 +130,29 @@ var toursContent= `<div class="tour">
 </header>
 <div class="tours">
 
-<div class="promo Israel" id="tour1">
+<div class="promo Israel" >
 <text>ISRAEL</text>
 <p>FROM $1000</p>
-<a id="tour1" href="#">
-<div class="promoBtn">      
+<a href="#">
+<div class="promoBtn" id="israel">      
  <p>LEARN MORE</p> </div> 
 </a>
 </div>
 
-<div class="promo USA id="tour2"">
+<div class="promo USA"">
 <text>U.S.A</text>
 <p>FROM $1500</p>
-<a id="tour2" href="">
-<div class="promoBtn">      
- <p>LEARN MORE</p> </div> 
+<a href="#">
+<div class="promoBtn" id="usa">      
+ <p>LEARN MORE</p> </div>
 </a>
 </div>
+
 <div class="promo AUS">
  <text> AUSTRAILIA</text>
  <p>FROM $1800</p>
- <a id="aus" href="">
-     <div class="promoBtn">      
+ <a href="#">
+     <div class="promoBtn" id="aus">      
      <p>LEARN MORE</p> </div> 
  </a>
 </div>
@@ -160,48 +160,48 @@ var toursContent= `<div class="tour">
 <div class="promo NewZealand">
  <text > <span> NEW ZEALAND</span></text>
  <p>FROM $1200</p>
- <a id="newZealand" href="">
-     <div class="promoBtn">      
+ <a href="#">
+<div class="promoBtn" id="newZealand">      
      <p>LEARN MORE</p> </div> 
  </a>
 </div>
 <div class="promo France">
  <text>FRANCE</text>
  <p>FROM $2900</p>
- <a id="france" href="">
-     <div class="promoBtn">      
+ <a href="#">
+     <div class="promoBtn" id="france">      
      <p>LEARN MORE</p> </div> 
  </a>
 </div>
 <div class="promo Egypt">
  <text>EGYPT</text>
  <p>FROM $900</p>
- <a id="egypt" href="">
-     <div class="promoBtn">      
+ <a href="#">
+     <div class="promoBtn" id="egypt">      
      <p>LEARN MORE</p> </div> 
  </a> 
 </div>
 <div class="promo Japan">
  <text>JAPAN</text>
  <p>FROM $1300</p>
- <a id="japan" href="">
-     <div class="promoBtn">      
+ <a href="#">
+     <div class="promoBtn" id="japan">      
      <p>LEARN MORE</p> </div> 
  </a> 
 </div>
 <div class="promo Canada">
  <text>CANADA</text>
  <p>FROM $2000</p>
- <a id="canada" href="">
-     <div class="promoBtn">      
+ <a href="#">
+     <div class="promoBtn" id="canada">      
      <p>LEARN MORE</p> </div> 
  </a>
 </div>
 <div class="promo UAE">
  <text>U.A.E</text>
  <p>FROM $3000</p>
- <a id="uae" href="">
-     <div class="promoBtn">      
+ <a href="#">
+     <div class="promoBtn" id="uae">      
      <p>LEARN MORE</p> </div> 
  </a>
 </div>
@@ -292,7 +292,7 @@ var contactContent= `<div class="contact">
 
 </div>`;
 
-var israelContent=` <div class="israel" id="tour1">
+var israelContent=` <div class="israel" >
 <div id="banner">
     <h2>Israel tour package:</h2>
     <h3>starting from $1000 (prices may vary)</h3>
@@ -319,7 +319,7 @@ var israelContent=` <div class="israel" id="tour1">
 
 <button>Book Now</button>
 </div>`;
-var usaContent=` <div class="usa" id="tour2">
+var usaContent=` <div class="usa" >
 <div id="banner">
     <h2>U.S.A tour package:</h2>
     <h3>starting from $1500 (prices may vary)</h3>
@@ -538,6 +538,7 @@ var uaeContent=`<div class="uae">
 </div>`;
 
 export function getPageContent(pageID, callback) {
+    
     $("#app").html(eval(pageID));
     if (callback) {
         callback();
